@@ -6,4 +6,91 @@
 
 body {
     background-color: orange;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+#wrapper {
+    margin: auto;
+    width: 60%;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 50px;
+}
+  
+
+h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    padding: 0.33em;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.headerP {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3em;
+}
+
+.scoreContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.scoreContainer .player {
+    margin-right: 2em;
+}
+
+.scoreContainer .playerChoice {
+    font-size: 7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.scoreContainer .score {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.scoreContainer .computerChoice {
+    font-size: 7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gameContainer .playerContainer{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    gap: 3em;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
 }
