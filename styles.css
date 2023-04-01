@@ -201,3 +201,9 @@ footer {
         font-size: 2em;
     }
 }
+
+@media screen and (max-width: 450px) {
+    header {
+        margin-bottom: 1.5em;
+    }
+}
