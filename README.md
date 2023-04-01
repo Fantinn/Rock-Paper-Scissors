@@ -60,12 +60,12 @@ function endGame() {
 
 ### Desktop
 
-![]()
-![]()
+![](https://github.com/Fantinn/Project-3-Rock-Paper-Scissors/blob/main/ss/desktop%20version1.png)
+![](https://github.com/Fantinn/Project-3-Rock-Paper-Scissors/blob/main/ss/desktop%20version2.png)
 
 ### Mobile
 
 <div align="center">
-    <img src="" alt="mobile ss1" />
-    <img src="" alt="mobile ss2" />
+    <img src="https://github.com/Fantinn/Project-3-Rock-Paper-Scissors/blob/main/ss/mobile%20version1.jpg" alt="mobile ss1" />
+    <img src="https://github.com/Fantinn/Project-3-Rock-Paper-Scissors/blob/main/ss/mobile%20version2.jpg" alt="mobile ss2" />
 </div>
