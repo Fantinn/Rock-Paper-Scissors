@@ -55,9 +55,11 @@ function playRound(playerSelection) {
 }
 
 function endGame() {
-  if (playerScore === winningScore) {
-    alert('Good work soldier! You won the game! The world is safe for now.')
-  } else {
-    alert('You lost the game! The world is doomed!')
-  }
+  setTimeout(function () {
+    if (playerScore === winningScore) {
+      alert('Good work soldier! You won the game! The world is safe for now.');
+    } else {
+      alert('You lost the game! The world is doomed!');
+    }
+  }, 100);
 }
