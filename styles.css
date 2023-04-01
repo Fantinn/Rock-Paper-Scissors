@@ -84,6 +84,10 @@ h2 {
     gap: 3em;
 }
 
+.gameContainer img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 footer {
     background-color: #333;
@@ -93,4 +97,72 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
+}
+
+@media (max-width: 1100px) {
+
+    #wrapper {
+        width: 80%;
+    }
+    .gameContainer img {
+      width: 120px;
+    }
+
+    .scoreContainer .playerChoice{
+        font-size: 5em;
+    }
+
+    .scoreContainer .computerChoice{
+        font-size: 5em;
+    }
+
+    .scoreContainer .score{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #wrapper {
+        width: 90%;
+    }
+
+    .scoreContainer .playerChoice{
+        font-size: 4em;
+    }
+
+    .scoreContainer .computerChoice{
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 750px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    .headerP {
+        font-size: 1.4em;
+    }
+
+    #wrapper {
+        width: 90%;
+    }
+
+    .gameContainer img {
+        width: 80px;
+      }
+
+    .scoreContainer .playerChoice{
+        font-size: 3em;
+    }
+
+    .scoreContainer .computerChoice{
+        font-size: 3em;
+    }
 }
