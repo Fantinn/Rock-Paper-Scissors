@@ -2,9 +2,9 @@ const playerChoice = document.querySelector('.playerChoice');
 const computerChoice = document.querySelector('.computerChoice');
 const playerScoreDisplay = document.querySelector('.player .score');
 const computerScoreDisplay = document.querySelector('.computer .score');
+const reset = document.querySelector('.reset');
 
 const headerP = document.querySelector('.headerP');
-const options = document.querySelectorAll('.options');
 const result = document.querySelector('.result');
 
 const rock = document.querySelector('.rock');
@@ -15,17 +15,21 @@ let playerScore = 0;
 let computerScore = 0;
 const winningScore = 5;
 const choices = ['rock', 'paper', 'scissors'];
+let gameOver = false;
 
 rock.addEventListener('click', playerOptions);
 paper.addEventListener('click', playerOptions);
 scissors.addEventListener('click', playerOptions);
 
+reset.addEventListener('click', resetGame);
+
 function playerOptions(e) {
+  if (gameOver) return;
+  
   const playerSelection = e.target.className;
   playerChoice.innerHTML = `<img src="images/${playerSelection}.png" alt="${playerSelection}" style="width: 80px;">`;
   playRound(playerSelection);
 }
-
 
 function playRound(playerSelection) {
   const computerSelection = choices[Math.floor(Math.random() * choices.length)];
@@ -55,6 +59,7 @@ function playRound(playerSelection) {
 }
 
 function endGame() {
+  gameOver = true;
   setTimeout(function () {
     if (playerScore === winningScore) {
       alert('Good work soldier! You won the game! The world is safe for now.');
@@ -62,4 +67,16 @@ function endGame() {
       alert('You lost the game! The world is doomed!');
     }
   }, 100);
+}
+
+function resetGame() {
+  gameOver = false;
+  playerScore = 0;
+  computerScore = 0;
+  playerChoice.innerHTML = '';
+  computerChoice.innerHTML = '';
+  headerP.innerHTML = 'This is a best of 5 game, the World is couting with you!';
+  result.innerHTML = 'Choose your Weapon';
+  playerScoreDisplay.innerHTML = `Player: ${playerScore}`;
+  computerScoreDisplay.innerHTML = `Computer: ${computerScore}`;
 }
