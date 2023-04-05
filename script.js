@@ -36,7 +36,8 @@ function playRound(playerSelection) {
   computerChoice.innerHTML = `<img src="images/${computerSelection}.png" alt="${computerSelection}" style="width: 80px;">`;
   
   if (playerSelection === computerSelection) {
-    headerP.innerHTML = `${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} ties with ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}.`;
+    headerP.innerHTML = `${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}
+     ties with ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}.`;
     result.innerHTML = `It's a Tie!`;
   } else if (
     (playerSelection === 'rock' && computerSelection === 'scissors') ||
@@ -44,11 +45,13 @@ function playRound(playerSelection) {
     (playerSelection === 'scissors' && computerSelection === 'paper')
   ) {
     playerScore++;
-    headerP.innerHTML = `${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} beats ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}.`;
+    headerP.innerHTML = `${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}
+     beats ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}.`;
     result.innerHTML = 'You Win!';
   } else {
     computerScore++;
-    headerP.innerHTML = `${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} is beaten by ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}.`;
+    headerP.innerHTML = `${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}
+     is beaten by ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}.`;
     result.innerHTML = 'You Lose!';
   }   
   playerScoreDisplay.innerHTML = `Player:${playerScore}`;
