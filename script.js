@@ -51,8 +51,8 @@ function playRound(playerSelection) {
     headerP.innerHTML = `${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} is beaten by ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}.`;
     result.innerHTML = 'You Lose!';
   }   
-  playerScoreDisplay.innerHTML = `Player: ${playerScore}`;
-  computerScoreDisplay.innerHTML = `Computer: ${computerScore}`;    
+  playerScoreDisplay.innerHTML = `Player:${playerScore}`;
+  computerScoreDisplay.innerHTML = `Computer:${computerScore}`;    
   if (playerScore === winningScore || computerScore === winningScore) {
     endGame();
   }
@@ -73,10 +73,10 @@ function resetGame() {
   gameOver = false;
   playerScore = 0;
   computerScore = 0;
-  playerChoice.innerHTML = '';
-  computerChoice.innerHTML = '';
+  playerChoice.innerHTML = '?';
+  computerChoice.innerHTML = '?';
   headerP.innerHTML = 'This is a best of 5 game, the World is couting with you!';
   result.innerHTML = 'Choose your Weapon';
-  playerScoreDisplay.innerHTML = `Player: ${playerScore}`;
-  computerScoreDisplay.innerHTML = `Computer: ${computerScore}`;
+  playerScoreDisplay.innerHTML = `Player:${playerScore}`;
+  computerScoreDisplay.innerHTML = `Computer:${computerScore}`;
 }
