@@ -55,7 +55,8 @@ function playRound(playerSelection) {
     result.innerHTML = 'You Lose!';
   }   
   playerScoreDisplay.innerHTML = `Player:${playerScore}`;
-  computerScoreDisplay.innerHTML = `Computer:${computerScore}`;    
+  computerScoreDisplay.innerHTML = `Computer:${computerScore}`;
+  
   if (playerScore === winningScore || computerScore === winningScore) {
     endGame();
   }
