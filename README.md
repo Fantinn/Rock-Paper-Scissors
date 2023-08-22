@@ -1,7 +1,7 @@
 # Project-3-Rock-Paper-Scissors
 
 ## Links
-- [Try the Demo here!](https://fantinn.github.io/Project-3-Rock-Paper-Scissors/)
+- [Try the Demo here!](https://fantinn.github.io/Rock-Paper-Scissors/)
 
 - [Link to the Assignment](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
 
