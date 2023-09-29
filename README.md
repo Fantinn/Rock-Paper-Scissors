@@ -6,11 +6,11 @@
 - [Link to the Assignment](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
 
 ## About
-This is a simple rock paper scissors game made with HTML, CSS and JavaScript.
+This simple rock-paper-scissors game is made with HTML, CSS, and JavaScript.
 
 The game is played against the computer and the winner is decided by who first wins 5 rounds.
 
-I diviated from the assignment a bit and added a few features:
+I deviated from the assignment a bit and added a few features:
 - The game is played in best of 5 rounds
 - Added a score counter
 - Added GUI elements to show the player's and computer's choice
